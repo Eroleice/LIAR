@@ -15,6 +15,8 @@ We are developing four major modules for our project, as the name shows, they ar
 - **Analysis**: a module that gives us a report of all the invevstment and grades the performance
 - **Revolusion**: a module that using couple technics to enchance the investment logic in 'Leek' module
 
+![src](https://github.com/Eroleice/LIAR/raw/gh-pages/image/mind_map.png)
+
 The world 'LIAR' itself is the realization of quantitative investment from us. I do believe that a success investment contains 3 steps:
 
 1. Turn cash into capital
