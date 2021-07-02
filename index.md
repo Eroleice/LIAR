@@ -28,6 +28,7 @@ Since cash won't increase by itself, people have to turn them into a state which
 ### Contributors
 
 **[@Yuhui Sun](https://github.com/Eroleice)**: Investment Advisor at [Haitong Securities Co Ltd](https://www.htsec.com/ChannelHome/4793976/index.shtml), focusing on hedge funds. Graduated from [UMass Boston](https://www.umb.edu/) in 2018, Master Degress of Accounting.
+**[@Chunyu Fan](https://github.com/fanchy888)**: <Need sth here!>
 
 ### Change Log
 
