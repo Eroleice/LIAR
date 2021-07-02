@@ -1,4 +1,4 @@
-## Welcome to Project 'Leek Investment Analysis Revolution'
+## Welcome to Project Leek Investment Analysis Revolution
 
 This is a study-purpose project started by two rookies who are looking for one way to have a better understanding about inevsting and mechines learning. Quantitative Investment would probably be a good choice for us, so se decide to start this new project, for getting some real practice on how the combination of financing theories and mechine learning helps people make good decisions in capital market.
 
