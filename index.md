@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Welcome to Project 'Leek Investment Analysis Revolution'
 
-You can use the [editor on GitHub](https://github.com/Eroleice/LIAR/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is a study-purpose project started by two rookies who are looking for one way to have a better understanding about inevsting and mechines learning. Quantitative Investment would probably be a good choice for us, so se decide to start this new project, for getting some real practice on how the combination of financing theories and mechine learning helps people make good decisions in capital market.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We dont' know how long would this project take us to finish, or even may not be finished, but we are still working on it and enjoying the progression we have done so far!
 
-### Markdown
+### Introduction
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The word 'Leek' is a meme in Chinese capital market and has the similar meaning of 'Sheep' in capital market.
 
-```markdown
-Syntax highlighted code block
+We are developing four major modules for our project, as the name shows, they are:
 
-# Header 1
-## Header 2
-### Header 3
+- **Leek**: a decision making module, which contains all the investment logic inside and make the buy/sell desicion
+- **Investment**: a module that does the back test to give a result of all the activities
+- **Analysis**: a module that gives us a report of all the invevstment and grades the performance
+- **Revolusion**: a module that using couple technics to enchance the investment logic in 'Leek' module
 
-- Bulleted
-- List
+The world 'LIAR' itself is the realization of quantitative investment from us. I do believe that a success investment contains 3 steps:
 
-1. Numbered
-2. List
+1. Turn cash into capital
+2. Wait until capital grows up
+3. Turn capital back to cash
 
-**Bold** and _Italic_ and `Code` text
+Since cash won't increase by itself, people have to turn them into a state which would grow up through time, and get them back to more cash to actually realize the gain in cash. Quantitative investment earns the money from pricing error in the capital market, it's a typical zero-sum game and won't enchance the groth or economics, so we take quantitative investment as a 'fake' investment, so called 'LIAR'.
 
-[Link](url) and ![Image](src)
-```
+### Contributors
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Yuhui Sun([@Eroleice](https://github.com/Eroleice))**: Investment Advisor at [Haitong Securities Co Ltd](https://www.htsec.com/ChannelHome/4793976/index.shtml), focusing on hedge funds. Graduated from [UMass Boston](https://www.umb.edu/) in 2018, Master Degress of Accounting.
 
-### Jekyll Themes
+### Change Log
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Eroleice/LIAR/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- 2021/07/02 Project created with a blank repo on github
