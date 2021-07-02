@@ -23,7 +23,7 @@ The world 'LIAR' itself is the realization of quantitative investment from us. W
 2. Wait until capital grows up
 3. Turn capital back to cash
 
-Since cash won't increase by itself, people have to turn them into a state which would grow up through time, and get them back to more cash to actually realize the gain in cash. Quantitative investment earns the money from pricing error in the capital market, it's a typical zero-sum game and won't enchance the groth or economics, so we take quantitative investment as a 'fake' investment, so called 'LIAR'.
+Since cash won't increase by itself, people have to turn them into a state which would grow up through time, and turn them back to more cash to actually realize the gain in cash. Quantitative investment earns the money from pricing error in the capital market, it's a typical zero-sum game and won't enchance the groth or economics, so we take quantitative investment as a 'fake' investment, so called 'LIAR'.
 
 ### Contributors
 
