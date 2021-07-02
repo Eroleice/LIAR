@@ -17,3 +17,5 @@ history_data=w.wsd("010107.SH",
                    "2018-06-01", "2018-06-11", "returnType=1;PriceAdj=CP", usedf=True) 
 # returnType表示到期收益率计算方法，PriceAdj表示债券价格类型‘
 history_data[1].head()
+
+
