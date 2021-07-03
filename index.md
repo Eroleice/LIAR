@@ -13,17 +13,17 @@ We are developing four major modules for our project, as the name shows, they ar
 - **Leek**: a decision making module, which contains all the investment logic inside and make the buy/sell desicion
 - **Investment**: a module that does the back test to give a result of all the activities
 - **Analysis**: a module that gives us a report of all the invevstment and grades the performance
-- **Revolusion**: a module that using couple technics to enchance the investment logic in 'Leek' module
+- **Revolution**: a module that using couple technics to enchance the investment logic in 'Leek' module
 
 ![mind_map](https://github.com/Eroleice/LIAR/raw/gh-pages/image/mind_map.jpg)
 
-The world 'LIAR' itself is the realization of quantitative investment from us. We do believe that a success investment contains 3 steps:
+The word 'LIAR' itself is the realization of quantitative investment from us. We do believe that a success investment contains 3 steps:
 
 1. Turn cash into capital
 2. Wait until capital grows up
 3. Turn capital back to cash
 
-Since cash won't increase by itself, people have to turn them into a state which would grow up through time, and turn them back to more cash to actually realize the gain in cash. Quantitative investment earns the money from pricing error in the capital market, it's a typical zero-sum game and won't enchance the groth or economics, so we take quantitative investment as a 'fake' investment, so called 'LIAR'.
+Since cash won't increase by itself, people have to turn them into a state which would grow up through time, and turn them back to more cash to actually realize the gain in cash. Quantitative investment earns the money from pricing error in the capital market, it's a typical zero-sum game and won't enchance the growth of economics, so we take quantitative investment as a 'fake' investment, so called 'LIAR'.
 
 ### Contributors
 
@@ -33,4 +33,4 @@ Since cash won't increase by itself, people have to turn them into a state which
 
 ### Change Log
 
-- 2021/07/02 Project created with a blank repo on github
+- 2021/07/02 Project created with a blank repo on GitHub
