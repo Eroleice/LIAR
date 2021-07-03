@@ -17,7 +17,7 @@ We are developing four major modules for our project, as the name shows, they ar
 
 ![mind_map](https://github.com/Eroleice/LIAR/raw/gh-pages/image/mind_map.jpg)
 
-The word 'LIAR' itself is the realization of quantitative investment from us. We do believe that a success investment contains 3 steps:
+The word 'LIAR' itself is the cognition of quantitative investment from us. We do believe that a success investment contains 3 steps:
 
 1. Turn cash into capital
 2. Wait until capital grows up
