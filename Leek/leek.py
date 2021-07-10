@@ -13,6 +13,7 @@ class Leek:
     def __init__(self, leek_id, stock_pool='000300.SH'):
         self.leek_id = leek_id
         self.account = Account()
+        #todo: 考虑同时选择两个或以上的指数作为池子，例如同时选择沪深300+上证180，调取两个指数的成分股并去重
         self.stock_pool = stock_pool
 
     def make_decision(self, date):
