@@ -1,53 +1,23 @@
 from datetime import datetime
-from WindPy import w
-import pandas as pd
-import asyncio
-import time
+from Investment.data_factory import generate_data_source
 
 
 class Market:
-    def __init__(self):
-        w.start()
-        w.isconnected()
+    def __init__(self, data_source):
+        self.data_source = generate_data_source(data_source)
 
-    @classmethod
-    def get_stock_pool(cls, stock_pool_code, date):
-        param = f"date={date.strftime('%Y-%m-%d')};windcode={stock_pool_code}"
-        res = w.wset("sectorconstituent", param)
-        stocks = res.Data[1]
+    def get_stock_pool(self, stock_pool_code, date):
+        stocks = self.data_source.get_stock_pool(stock_pool_code, date)
         return stocks
 
-    @classmethod
-    def get_market_data(cls, codes, fields, start, end, options):
-        start = start.strftime('%Y-%m-%d')
-        end = end.strftime('%Y-%m-%d')
-        codes = ','.join(codes)
-        tasks = []
-        for field in fields:
-            tasks.append(cls.query(codes, field, start, end, options))
-        loop = asyncio.get_event_loop()
-        results = loop.run_until_complete(asyncio.gather(*tasks))
-
-        return cls.format_data(results)
-
-    @staticmethod
-    def format_data(results):
-        # todo
-        return results
-
-    @staticmethod
-    async def query(codes, field, start, end, options):
-        res = w.wsd(codes, field, start, end, options)
-        return res
-
-    @staticmethod
-    def destroy():
-        w.stop()
+    def get_market_data(self, codes, fields, start, end, options):
+        return self.data_source.get_market_data( codes, fields, start, end, options)
 
 
-market = Market()
+market = Market('local')
 
 
 if __name__ == '__main__':
     r = market.get_stock_pool('000300.SH', datetime.today())
-    market.destroy()
+    market.data_source.write2csv('hi.csv', {'col1': [1, 2, 3], 'col2': [1, 2, 3]})
+    print(market.data_source.query_from_db(file_name='hi.csv'))
