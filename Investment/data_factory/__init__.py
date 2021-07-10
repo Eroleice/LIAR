@@ -1,6 +1,7 @@
+from utils import configs
+
 from .wind import WindData
 from .local_file import LocalFile
-from utils import configs
 
 
 def generate_data_source(name):

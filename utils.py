@@ -1,4 +1,4 @@
-import json
+import yaml
 import os
 
 PATH = os.path.abspath(__file__)
@@ -6,9 +6,9 @@ PATH = os.path.abspath(__file__)
 
 def load_config():
     path = os.path.dirname(PATH)
-    file = os.path.join(path, 'config.json')
+    file = os.path.join(path, 'config.yml')
     with open(file, 'r') as f:
-        config = json.load(f)
+        config = yaml.safe_load(f)
     return config
 
 

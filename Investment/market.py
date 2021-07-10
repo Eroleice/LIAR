@@ -1,4 +1,5 @@
 from datetime import datetime
+from utils import configs
 from Investment.data_factory import generate_data_source
 
 
@@ -14,7 +15,7 @@ class Market:
         return self.data_source.get_market_data( codes, fields, start, end, options)
 
 
-market = Market('local')
+market = Market(configs['default_source'])
 
 
 if __name__ == '__main__':
