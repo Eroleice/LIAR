@@ -1,0 +1,158 @@
+[
+  {
+    "A": {
+      "value": "operatecashflow_ttm",
+      "type": "field",
+      "time": 0
+    },
+    "B": {
+      "value": 0,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "operatecashflow_ttm",
+      "type": "field",
+      "time": 90
+    },
+    "B": {
+      "value": 0,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "operatecashflow_ttm",
+      "type": "field",
+      "time": 180
+    },
+    "B": {
+      "value": 0,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "fa_roe_avg",
+      "type": "field",
+      "time": 0
+    },
+    "B": {
+      "value": 0.2,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "fa_roe_avg",
+      "type": "field",
+      "time": 360
+    },
+    "B": {
+      "value": 0.1,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "fa_roe_avg",
+      "type": "field",
+      "time": 720
+    },
+    "B": {
+      "value": 0.1,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "pb_lf",
+      "type": "field",
+      "time": 0
+    },
+    "B": {
+      "value": 50,
+      "type": "constant"
+    },
+    "op": "<"
+  },
+
+  {
+    "A": {
+      "value": "fa_npgr_ttm",
+      "type": "field",
+      "time": 0
+    },
+    "B": {
+      "value": 0.15,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "fa_npgr_ttm",
+      "type": "field",
+      "time": 90
+    },
+    "B": {
+      "value": 0.15,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "fa_npgr_ttm",
+      "type": "field",
+      "time": 180
+    },
+    "B": {
+      "value": 0.15,
+      "type": "constant"
+    },
+    "op": ">"
+  },
+
+  {
+    "A": {
+      "value": "fa_npgr_ttm",
+      "type": "field",
+      "time": 0
+    },
+    "B": {
+      "value": "fa_npgr_ttm",
+      "type": "field",
+      "time": 90
+    },
+    "op": "<"
+  },
+
+  {
+    "A": {
+      "value": "ipo_listdays",
+      "type": "field",
+      "time": 0
+    },
+    "B": {
+      "value": 180,
+      "type": "constant"
+    },
+    "op": ">"
+  }
+]

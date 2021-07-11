@@ -1,11 +1,15 @@
-
+import os
+import json
+import pandas as pd
+import numpy as np
 from Leek.decision import BaseDecision
 
 
 class GrowthSelection(BaseDecision):
 
     def __init__(self, leek, date):
-        super().__init__(leek, 'growth selection', date)
+        super().__init__(leek, 'growth_selection', date)
+
 
 # 选股逻辑：
 # 1. 当期 operatecashflow_ttm 大于0
@@ -18,14 +22,5 @@ class GrowthSelection(BaseDecision):
 # 8. 当期 fa_npgr_ttm 大于15
 # 9. 90天前 fa_npgr_ttm 大于15
 # 10. 180天前 fa_npgr_ttm 大于15
-# 11. 当期 fa_npgr_ttm 小于 90天前 fa_npgr_ttm 
+# 11. 当期 fa_npgr_ttm 小于 90天前 fa_npgr_ttm
 # 12. 当期 ipo_listdays 大于180
-
-# if __name__ == '__main__':
-#     from datetime import datetime, timedelta
-#     a = GrowthSelection()
-#     a.stock_pool = '000300.SH'
-#     g = GrowthSelection(a, datetime.today())
-#     r = g.get_market_data(fields=["operatecashflow_ttm", "profit_ttm"], start_date=datetime.today()-timedelta(days=1000), end_date=datetime.today())
-#     for k, v in r.items():
-#         print(k, v)

@@ -1,5 +1,8 @@
 import asyncio
+import pandas as pd
+
 from WindPy import w
+from collections import defaultdict
 from Investment.data_factory.base import Base
 
 
@@ -29,8 +32,17 @@ class WindData(Base):
 
     @staticmethod
     def format_data(results):
-        # todo
-        return results
+        stocks = defaultdict(dict)
+        res = {}
+        for r in results:
+            field = r.Fields[0].lower()
+            for index, code in enumerate(r.Codes):
+                if not stocks[code].get('date'):
+                    stocks[code]['date'] = r.Times
+                stocks[code][field] = r.Data[index]
+        for code, data in stocks.items():
+            res[code] = pd.DataFrame.from_dict(data).sort_values(by=['date'], ascending=False)
+        return res
 
     async def query(self, codes, field, start, end, options):
         res = self.query_from_db(codes, field, start, end, options)

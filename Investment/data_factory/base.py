@@ -20,10 +20,14 @@ class Base(ABC):
     def get_market_data(self, *args, **kwargs):
         pass
 
+    # todo optimize with multi-thread
     def write2csv(self, name, data):
         path = self.config['url']
         if not os.path.exists(path):
             os.makedirs(path)
         file_name = os.path.join(path, name)
         # write to file
-        pd.DataFrame.from_dict(data).to_csv(file_name, index=False)
+        if isinstance(data, pd.DataFrame):
+            data.to_csv(file_name, index=False)
+        else:
+            pd.DataFrame.from_dict(data).to_csv(file_name, index=False)
